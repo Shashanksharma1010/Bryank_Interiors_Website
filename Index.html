@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+
+        <!-- Font Awesome Icon-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <title>
+            Bryank Interirors
+        </title>
+
+        <link rel="icon" type="image/x-icon" href="images/logo.png">
+
+        <!-- My Css -->
+        <link rel="stylesheet" href="Style.css">
+    </head>
+
+    <body>
+         <!-- Navbar Section -->
+         <nav>
+            <!-- Non Hamburger menu -->
+            <div class="menu">
+                <div class="list-items">
+                    <li onclick="PageView('HomePage')">Home</li>
+                    <li onclick="PageView('AboutPage')">About Us</li>
+                    <li onclick="PageView('HomePage')"><a class="service-page-link" href="#ServicesPage">Services</a></li>
+                    <li onclick="PageView('CertificatePage')">Certificates</li>
+                    <li onclick="PageView('ContactFormPage')">Contact</li>
+                    <li><a class="service-page-link" href="https://wa.me/9871657694" target="_blank">Whatsapp</a></li>
+                    <li><a  class="service-page-link" href="tel:+91-9871657694" target="_blank">Call</a></li>
+                </div>
+
+                <div class="menu-button" onclick="openMobileMenu()">
+                    <img src="images/menu.png" width="50px">
+                </div>
+            </div>
+
+            <!-- Hamburger menu -->
+            <div class="hamburger-menu">
+                <li class="hamburger-close" onclick="closeMobileMenu()">X</li>
+                <li onclick="PageView('HomePage'), closeMobileMenu()">Home</li>
+                <li onclick="PageView('AboutPage'), closeMobileMenu()">About Us</li>
+                <li onclick="PageView('HomePage'), closeMobileMenu()"><a class="service-page-link" href="#ServicesPage">Services</a></li>
+                <li onclick="PageView('CertificatePage'), closeMobileMenu()">Certificates</li>
+                <li onclick="PageView('ContactFormPage'), closeMobileMenu()">Contact</li>
+                <li><a class="service-page-link" href="https://wa.me/9871657694" target="_blank">Whatsapp</a></li>
+                <li><a  class="service-page-link" href="tel:+91-9871657694" target="_blank">Call</a></li>
+            </div>
+        </nav>
+
+        <!-- Home Page Section -->
+        <section id="HomePage">
+
+            <!-- Intro -->
+            <div class="intro">
+                <video autoplay muted loop width="350px">
+                    <source src="videos/LogoVideo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <video autoplay muted loop width="350px">
+                    <source src="videos/intro-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Banner -->
+            <div class="banner">
+                <img src="images/Goal.png" width="50%">
+
+                <div class="banner-paragraph">
+                    <p class="paragraph-style">
+                        <strong>Bryank Interiror</strong> is an interior and construction contract 
+                        company established in 2007. Our ethos is excellence in design and delivery; 
+                        working across architecture, construction, master planning, interior design.
+                    </p>
+                    <br>
+                    
+                    <p class="paragraph-style">
+                        With a far sighted vision, a keen perception of the market trends, and a strong 
+                        commitment to customer satisfaction, we are engaged in offering reliable Interiors 
+                        & Civil Services, with expertise of completing several renowned INTERIOR & Civil 
+                        PROJECTS. We offer quality tiling and painting solutions for interior and exterior. 
+                        Our professionals hold expertise in the COMPLETE INTERIOR WORKS - Paint, Furniture, 
+                        Tiling, POP, False Ceiling, Aluminum Glass Door and Civil- CC Road, Villas & Housing, 
+                        PCC | we always keep client’s need in mind to ensure client satisfaction.
+                    </p>
+                    <br>
+                </div>
+            </div>
+
+            <!-- Video Container -->
+            <div class="video-container">
+                <div class="video-class">
+                    <h2 class="paragraph-style">
+                        At BRYANK INTERIROR we have sustained success through the strength and expertise 
+                        of our people, providing innovative construction & Interior solutions to complex infrastructure 
+                        projects across PAN India, especially in Uttarakhand & Delhi.
+
+                        <br><br><br>
+                        WE FOCUS ON:
+                        <br>
+                        <Span>
+                            <UL>
+                                <li>
+                                    RELIABILITY
+                                </li>
+                                <li>
+                                    AUTHENTICITY
+                                </li>
+                                <li>
+                                    TOP NOTCH WORK
+                                </li>
+                            </UL>
+                        </Span>
+
+                    </h2>
+                </div>
+
+                <video controls>
+                    <source src="videos/video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- information -->
+             <div class="information-container">
+                <div class="information-container-section-1">
+                    <div>
+                        <h3>Construction Work</h3>
+                        <p>
+                            With a team of experienced builders and energetic designers, 
+                            we are committed to providing the finest civil construction services. 
+                            We prioritize safety, efficiency, and sustainability, employing best practices 
+                            and premium materials to create durable and environmentally-friendly structures. 
+                            From foundation to finish, we are committed to excellence, ensuring that every 
+                            project is completed on time, within budget, and to the complete satisfaction 
+                            of our clients. We are engaged in offering an excellent quality service of civil engineering. 
+                            We undertake several kinds of commercial and non-commercial projects that include 
+                            Civil Construction works as well.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3>Interior Work</h3>
+                        <p>
+                            At Bryank Interior, we specialize in providing high-quality interior work that enhances 
+                            the beauty and functionality of your home. Our team is dedicated to using good materials and the latest techniques 
+                            to create spaces that are both stylish and practical, Whether you're looking for modern gypsum board ceilings, robust 
+                            tile work, or reliable grills and railings, we got you covered, we ensure every aspect of your interior is thoughtfully designed.
+                        </p>
+                    </div>
+                </div>
+
+                <h1 class="heading-style">Categories</h1>
+
+                <div class="information-container-section-2">
+                    <div>
+                        <h3>Residential Construction & Interior Work</h3>
+                        <p>
+                            At Bryank Interiror, we are dedicated to delivering top-tier residential construction work that brings 
+                            our clients' dream homes to life. we are dedicated to delivering high-quality residential construction 
+                            and interior work that suits your needs. Our comprehensive approach 
+                            begins with a detailed consultation to understand the unique needs and visions of each homeowner. 
+                            our skilled builders execute each phase of the project with precision and care.
+                        </p>
+                    </div>
+    
+                    <div>
+                        <h3>Commercial Construction & Interior Work</h3>
+                        <p>
+                            At Bryank Interiror, we excel in delivering top-tier commercial construction 
+                            and interior work that enhances functionality and elevates aesthetics for businesses,
+                            From structural elements to sophisticated interior finishes, we handle each phase meticulously,
+                            we create commercial spaces that are not only functional and durable but also inspiring and conducive to business success.
+                        </p>
+                    </div>
+    
+                    <div>
+                        <h3>Industrial Construction & Interior Work</h3>
+                        <p>
+                            At Bryank Interiror, we excel in providing superior industrial 
+                            construction and interior work, designed to meet the demanding requirements of industrial environments.
+                            With rigorous project management and clear communication, we deliver projects on time and within budget.
+                        </p>
+                    </div>
+                </div>
+                
+             </div>
+
+            <!-- Our mission -->
+            <div class="our-mission">
+                <h1 class="heading-style">Our Mission</h1>
+                <div class="container">
+                    <div class="paragraph-container">
+                        <p class="paragraph-style">
+                            To provide quality, custom home construction and home interior services that 
+                            full-fills our customers’ visions and exceed their expectations. 
+                            We focus on building good client relationships. 
+                        </p>
+                        <br><br>
+                        
+                        <p class="paragraph-style">
+                            We strive to create the best solutions for client’s projects and to ensure 
+                            high quality and timely project execution. We believe that quality and timing 
+                            project implementation are very critical to the success of our business.
+                        </p>
+                        <br>
+
+                        <p class="paragraph-style">
+                            We are dedicated to give our best to satisfy every customers by having a 
+                            solid network with suppliers and field workers. The professionalism at all 
+                            level ensures that the planning and preparation gives the customer top quality 
+                            results.We will always put in front 
+                            that customer satisfaction is the most important thing to maintain.
+                        </p>
+                        <br>
+                    </div>
+
+                    <div>
+                        <img src="images/construction.png">
+                    </div>
+                </div>
+            </div>
+
+             <!-- Photo Gallery -->
+             <div class="photo-gallery">
+                <h1 class="heading-style">We Incorporate Beautiful Designs & Flawless Construction</h1>
+                <div class="grid-container">
+                    <div class="item1"><img src='images/image8.jpeg' decoding="async"></div>
+                    <div class="item2"><img src='images/image4.jpeg' decoding="async"></div>
+                    <div class="item3"><img src='images/image1.jpeg' decoding="async"></div>  
+                    <div class="item4"><img src='images/image2.jpeg' decoding="async"></div>
+                    <div class="item5"><img src='images/image10.jpg' decoding="async"></div>
+                </div>
+            </div>
+
+              <!-- Our Services -->
+            <div id="ServicesPage" class="Services-section">
+                <h1 class="heading-style">Our Services</h1>
+                <div class="services">
+                    <div class="services-card">
+                        <h3>CIVIL WORK</h3>
+                        <img src="images/civil-work.png">
+                        <br>
+                        <ul>
+                            <li onclick="InfoCard('Mason')">Mason work & Plastering<div><button class="btn btn-dark btn-sm">Know More</button></div></li>
+                            <li onclick="InfoCard('Grills')">Grills & Railings<div><br><button class="btn btn-dark btn-sm">Know More</button></div></li>
+                            <li onclick="InfoCard('Roofing')">Roofing<div><br><button class="btn btn-dark btn-sm">Know More</button></div></li>
+                            <li onclick="InfoCard('RCC')">RCC Work<div><br><button class="btn btn-dark btn-sm">Know More</button></div></li>
+                            <li onclick="InfoCard('Tile')">Tile Work<div><br><button class="btn btn-dark btn-sm">Know More</button></div></li>
+                            <li onclick="InfoCard('Prefabricated')">Prefabricated House & Wooden House<div><br><button class="btn btn-dark btn-sm">Know More</button></div></li>
+                            <li onclick="InfoCard('Water_tank')">Water tank<div><br><button class="btn btn-dark btn-sm">Know More</button></div></li>
+                        </ul>
+                    </div>
+    
+                    <div class="services-card">
+                        <h3>FALSE CEILING</h3>
+                        <br>
+                        <img src="images/ceiling.png" height="200px">
+                        <ul>
+                            <li onclick="InfoCard('Modular')">Modular grid ceiling<div><br><button class="btn btn-dark btn-sm">Know More</button></div></li>
+                            <li onclick="InfoCard('Gypsum')">Gypsum board ceiling<div><br><button class="btn btn-dark btn-sm">Know More</button></div></li>
+                            <li onclick="InfoCard('POP')">POP decorative false ceiling<div><br><button class="btn btn-dark btn-sm">Know More</button></div></li>
+                            <li onclick="InfoCard('PVC')">Pvc wall ceiling<div><br><button class="btn btn-dark btn-sm">Know More</button></div></li>
+                        </ul>
+                    </div>
+    
+                    <div class="services-card">
+                        <h3>JOINERY WORKS</h3>
+                        <img src="images/joinery.png">
+                        <br>
+                        <ul>
+                            <li onclick="InfoCard('Panelling')">Panelling<div><br><button class="btn btn-dark btn-sm">Know More</button></div></li>
+                            <li onclick="InfoCard('Doors')">Doors<div><br><button class="btn btn-dark btn-sm">Know More</button></div></li>
+                            <li onclick="InfoCard('furniture')">Custom made furniture<div><br><button class="btn btn-dark btn-sm">Know More</button></div></li>
+                            <li onclick="InfoCard('Storages')">Storages and cabinates<div><br><button class="btn btn-dark btn-sm">Know More</button></div></li>
+                        </ul>
+                    </div>
+    
+                    <div class="services-card">
+                        <h3>PAINITNG AND POLISHING</h3>
+                        <br>
+                        <img src="images/Paint.png">
+
+                        <ul>
+                            <li onclick="InfoCard('Painting')">Painting<div><br><button class="btn btn-dark btn-sm">Know More</button></div></li>
+                            <li onclick="InfoCard('Polishing')">Polishing<div><br><button class="btn btn-dark btn-sm">Know More</button></div></li>
+                            <li onclick="InfoCard('Duco')">Duco Finishing<div><br><button class="btn btn-dark btn-sm">Know More</button></div></li>
+                            <li onclick="InfoCard('Texture')">Texture Finishing<div><br><button class="btn btn-dark btn-sm">Read More</button></div></li>
+                            <li onclick="InfoCard('Steel')">Steel Plant Structural Paint<div><br><button class="btn btn-dark btn-sm">Know More</button></div></li>
+                        </ul>
+                    </div>
+    
+                    <div class="services-card">
+                        <h3>ELECTRICAL WORKS</h3>
+                        <br>
+                        <img src="images/electric.png">
+                        <ul>
+                            <li onclick="InfoCard('Electrical')">Electrical fittings & fixtures<div><br><button class="btn btn-dark btn-sm">Know More</button></div></li>
+                            <li onclick="InfoCard('Internal')">Internal electrification (Lighting/Power outlets/DBs & Internal Panels/Earthing system/Ups systems)<div><br><button class="btn btn-dark btn-sm">Know More</button></div></li>
+                            <li onclick="InfoCard('External')">External electrification (HT Sub-station/Main LT Panels/Earthing system/DG/EB/CEIG Clearances)<div><br><button class="btn btn-dark btn-sm">Know More</button></div></li>
+                        </ul>
+                    </div>
+
+                    <div class="services-card">
+                        <h3>FLOORING</h3>
+                        <br>
+                        <img src="images/Floor.png">
+                        <ul>
+                            <li onclick="InfoCard('False')">False Flooring<div><br><button class="btn btn-dark btn-sm">Know More</button></div></li>
+                            <li onclick="InfoCard('Wooden')">Wooden Flooring<div><br><button class="btn btn-dark btn-sm">Know More</button></div></li>
+                            <li onclick="InfoCard('Granite')">Granite/Marble/Tiles<div><br><button class="btn btn-dark btn-sm">Know More</button></div></li>
+                            <li onclick="InfoCard('Vinyl')">Vinyl Flooring<div><br><button class="btn btn-dark btn-sm">Know More</button></div></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Our Clients -->
+            <div>
+                <h2 class="heading-style">Our Clients</h2>
+                <div class="client-card-section" >
+                    <div onclick="Modal('true','client.max')" class="client-card">
+                        <img src="images/max.png" width="200px">
+                        <br><br><br><br>    
+                        <button class="btn btn-success">Read More...</button>
+                    </div>
+
+                    <div onclick="Modal('true','client.jalsansthan')" class="client-card">
+                        <img src="images/jalsansthan.png" width="200px">
+                        <br>
+                        <button class="btn btn-success">Read More...</button>
+                    </div>
+
+                    <div onclick="Modal('true','client.USB')" class="client-card">
+                        <img src="images/USB.png" width="200px">
+                        <br>
+                        <button class="btn btn-success">Read More...</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reviews -->
+            <div>
+                <h2 class="heading-style">What Our Clients Say</h2>
+                <div class="client-card-section">
+                    <div onclick="Modal('true','review.Atul_Singh')" class="client-card">
+                        <p>Excellent Experience and Stunning Results </p>
+                        <strong>-Atul Singh</strong>
+                        <br><br>
+                        <button class="btn btn-success">Read More...</button>
+                    </div>
+
+                    <div onclick="Modal('true','review.Pramod_Gupta')" class="client-card">
+                        <p>Professional and Reliable <br><strong>read more...</strong></p>
+                        <strong>-Pramod Gupta</strong>
+                        <br><br>
+                        <button class="btn btn-success">Read More...</button>
+                    </div>
+
+                    <div onclick="Modal('true','review.Vaishali_Sharma')" class="client-card">
+                        <p>Great Design, Amazed with the results <br><strong>read more...</strong></p>
+                        <strong>-Vaishali Sharma</strong>
+                        <br><br>
+                        <button class="btn btn-success">Read More...</button>
+                    </div>
+
+                    <div onclick="Modal('true','review.Ankit_Kumar')" class="client-card">
+                        <p>Satisfied with their services <br><strong>read more...</strong></p>
+                        <strong>-Ankit Kumar</strong>
+                        <br><br>
+                        <button class="btn btn-success">Read More...</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Location Map -->
+            <div>
+                <h1 class="heading-style">Find Us On Map</h1>
+                <div class="google-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3999.898192243106!2d77.295110934401!3d28.681776998721595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb9caebdf629%3A0xfba3859d1c079212!2sMansarovar%20Park%2C%20Shahdara%2C%20Delhi%2C%20110032!5e0!3m2!1sen!2sin!4v1722344046901!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- About Page Section -->
+        <section id="AboutPage">
+            <br><br><br>
+            <h1 class="heading-style">About Us & What We Do</h1>
+
+            <div class="about-us-section">
+                <p>
+                    <strong>Bryank Interiror</strong> is an established name from Delhi (India) that is engaged in the manufacturing and trade activities. 
+                    We serve as a prestigious manufacturer, exporter, and supplier of premium quality baskets and PVC wall panel. 
+                    And, we are also active in construction industry and have been delighting clients with home painting services, 
+                    residential interior designing services, commercial interior designing services, and interior construction services. 
+                    All the products and services that we make available excel in quality, performance, and cost-effectiveness. 
+                    We have modernistic production unit and we are supported by a team of innovative and skilled people to serve our patrons better.
+                </p>
+
+                <p>
+                    Established in the year 2007, Bryank Interiror has been progressing on the path of customer satisfaction and a number 
+                    of its buyers are quite satisfied with the company’s offerings and services. Mr. Mahesh is the esteemed founder of the company, 
+                    who has been guiding the organizational resources to work for company ultimate objective i.e. customer satisfaction.
+                </p>
+
+                <p>
+                    <h5>Our Team</h5>
+                    The workforce of an organization is responsible for its well-being and we are blessed to have one of the most hardworking and dedicated staff members in the industry. All the members of our workforce are backed by years of experience and like to work with perfection. They make sure that every job is executed according to the set quality standards.
+                </p>
+
+                <p>
+                    <h5>Network</h5>  
+                    The company has always believed that a strong network is like a backbone for a 
+                    business that caters to global needs. We have ensured to invest wisely in 
+                    developing a strong network of buyers and shipping companies to be able to meet 
+                    patrons’ needs with sheer efficiency and timeliness.
+                </p>
+
+                <p>
+                    <h5>Basic Information</h5>
+                </p>
+
+                <p>
+                    <h5>Nature of Business</h5>
+                    Manufacturer / Exporter / Service Provider / Supplier / Retailer / Distributor / Importer / Trader / Buying House
+                </p>
+
+                <p>
+                    <h5>Contact Person</h5>
+                    Mr. Mahesh Sharma | Phone: 9871657694
+                </p>
+
+                <p>
+                    <h5>Registered Address</h5>
+                    A 178, Steet 6, Mandoli, Dehradun, Delhi - 110093, India
+                </p>
+
+                <p>
+                    <h5>Total Number of Employees</h5>
+                    20 - 50
+                </p>
+
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="CertificatePage">
+            <br><br><br>
+            <h1 class="heading-style">Certification</h1>
+            <br>
+            <div>
+                <h2>UDYAM REGISTRATION CERTIFICATE</h2>
+                <br>
+                <div class="certificate-images">
+                    <img src="images/udyampage1.png">
+                    <img src="images/udyampage2.png">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Page -->
+        <section id="ContactFormPage">
+            <br><br><br>
+            <h1 class="heading-style">Contact Us</h1>
+            <div class="contactform-container">
+                
+                <form>
+                    <input name="name" type="text" placeholder="Enter Your Name">
+                    <input name="email" type="email" placeholder="Enter Email">
+                    <input name="phone" type="number" maxdigit="10" Placeholder="Enter Your Number">
+                    <input name="subject" type="text" placeholder="Enter Message Subject">
+                    <textarea name="Message" placeholder="Enter Your Message"></textarea>
+                    <button type="submit" class="btn btn-warning btn-lg">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-social-links-container">
+                <p>Get connected with us on social networks:</p>
+
+                <div class="footer-social-links">
+                    <a href="https://x.com/MaheshVashisth9/" target="_blank" class="fa fa-twitter"></a>
+                    <a href="https://www.instagram.com/brayankinterior/" target="_blank" class="fa fa-instagram"></a>
+                    <a href="https://www.linkedin.com/in/mahesh-sharma-8166b543/" target="_blank" class="fa fa-linkedin"></a>
+                    <a href="https://wa.me/9871657694" target="_blank" class="fa fa-whatsapp"></a>
+                </div>
+            </div>
+
+            <div class="footer-information-container">
+                <div class="company-name">Bryank Interiors| “We are for your prosperity & organizational development with the utilization of competent Workmen & machineries with timely execution or works. 
+                “We value our business relationship with you and will do everything possible to ensure your success.” </div>
+                <br>
+                <div class="important-links">
+                    <p>Important Links</p>
+                    <li onclick="PageView('HomePage')">Home</li>
+                    <li onclick="PageView('AboutPage')">About Us</li>
+                    <li onclick="PageView('HomePage')"><a style="color:white" class="service-page-link" href="#ServicesPage">Services</a></li>
+                    <li onclick="PageView('ContactFormPage')">Contact</li>
+                    <li onclick="PageView('CertificatePage')">Certificates</li>
+                </div>
+                <br>
+                <div class="Address">
+                    <p>| Address: Mansarovar Park, Shahdara, Delhi, India 110032</p>
+                    <p>| Ph: 9871657694 </p>
+                    <p>| Gmail: bryankinteriror@gmail.com</p>
+                    <p>| GSTN: 07AKSPS3760P2Z3</p>
+                </div>
+            </div>
+
+            <div class="footer-credits">
+                <p>Copyright © 2007 Bryank Interiors - All Rights Reserved</p>
+                <P>Developed By @Shashank Sharma | Instagram_handle : <a href="https://www.instagram.com/web_development_design">@web_development_design</a> </P>
+            </div>
+        </footer>
+
+        <!-- Self Made Modal -->
+         <div class="self-modal">
+
+            <div class="self-modal-card">
+
+                <button onclick="Modal('false', 'none')" class="btn btn-secondary">Close</button>
+
+                <h3 class="self-modal-heading" >
+
+                </h3>
+
+                <div class="self-modal-body">
+
+                </div>
+
+                <br>
+                <div class="author">Hello Sharma</div>
+
+                <button onclick="Modal('false', 'none')" class="btn btn-secondary">Close</button>
+            </div>
+         </div>
+
+        <!-- Self Info Card -->
+        <div class="info-card">
+            <br><br><br>
+            <button onclick="InfoCard('close')" class="info-card-close btn btn-dark">Close</button>
+            <h3 class="info-card-heading">Information</h3>
+
+            <img class="info-card-image" src="" decoding="async"><hr>
+
+            <div class="info-card-body">
+         
+            </div>
+        </div>
+
+
+        <!-- My Script -->
+        <script src="index.js"></script>
+        <script src="card.js"></script>
+
+
+        <!-- Bootstrap Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" ></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" ></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" ></script>
+    </body>
+</html>
