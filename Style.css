@@ -13,7 +13,8 @@
 
 /* CSS variables */
 :root {
-    --theme-color: #ff7300;
+    --theme-color: black;
+    --gradient: linear-gradient(90deg, rgba(251,125,6,1) 22%, rgba(54,52,55,1) 49%);
 }
 
 
@@ -22,15 +23,20 @@
     text-align: center;
     /* text-decoration:wavy; */
     /* text-decoration-color: var(--theme-color); */
-    color:var(--theme-color);
+    color:white;
+    background: var(--theme-color);
     font-size: xx-large;
     border: 2px solid var(--theme-color);
     padding: 20px;
     margin:5px;
 }
 
+.magic {
+    color: orangered;
+}
+
 .paragraph-style {
-    font-size: large;
+    font-size:medium;
     color:black;
 }
 
@@ -52,7 +58,7 @@ background: #f1f1f1;
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-background: var(--theme-color); 
+background: var(--gradient); 
 }
 
 /* Handle on hover */
@@ -65,6 +71,7 @@ background: yellow;
 
 nav .menu {
     background:var(--theme-color);
+    color:#fff;
     width:100%;
     padding: 2px;
     display:flex;
@@ -79,6 +86,10 @@ nav .menu {
     box-shadow: 7px 9px 8px -5px rgba(0,0,0,0.75);
 }
 
+nav .menu .menu-logo {
+    margin:10px;
+}
+
 nav .menu .list-items {
     width:80%;
     display: flex;
@@ -91,12 +102,12 @@ nav .menu .list-items {
 
 nav .menu .list-items li {
     cursor: pointer;
-    font-size: larger;
+    font-size: medium;
     transition: ease 0.5s;
 }
 
 nav .menu .list-items li:hover {
-    color: #f1f1f1;
+    color: orangered;
 }
 
 nav .menu .menu-button {
@@ -118,6 +129,7 @@ nav .menu .menu-button {
     /* align-items: center; */
     color:black;
     background-color: var(--theme-color);
+    color:white;
     z-index:10;
     animation: shutter 0.4s;
 }
@@ -132,8 +144,9 @@ nav .menu .menu-button {
     animation: opac 1s;
 }
 
-.hamburger-menu li:hover {
-    background-color: white;
+.hamburger-menu li:hover{
+    background: var(--gradient);
+    color:var(--theme-color);
 }
 
 /* new changes applied */
@@ -145,12 +158,35 @@ nav .menu .menu-button {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-image: url("images/intro.jpg");
+    background-size: cover;
     padding: 1rem;
     margin-top: 5%;
 }
 
 .intro video {
     width: 40%;
+}
+
+.intro-text {
+    background: rgba(0,0,0,0.75);
+    width: 100%;
+    font-family: 'Roboto';
+    height: 90vh;
+    padding: 5rem;
+    color: white;
+}
+
+.intro-text img {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.intro-text h1 {
+    width:50%;
 }
 
 
@@ -163,9 +199,6 @@ nav .menu .menu-button {
     justify-content: space-between;
     flex-direction: row;
     padding: 50px;
-    border: 5px solid white;
-    background: rgb(232,222,24);
-    background: linear-gradient(90deg, rgba(232,222,24,1) 0%, var(--theme-color) 100%, rgba(0,0,0,1) 100%);
 }
 
 .banner-paragraph {
@@ -173,6 +206,10 @@ nav .menu .menu-button {
     margin: 10px;
     padding:10px;
     font-size: larger;
+}
+
+.banner-paragraph p {
+    color: black;
 }
 
 
@@ -194,14 +231,22 @@ nav .menu .menu-button {
 /* Video Section */
 .video-container {
     display: flex;
-    padding: 10px;
+    padding: 2rem;
     flex-direction: row;
     justify-content: space-around;
     background-color: var(--theme-color);
 }
 
+.video-container ul li {
+    color: orangered;
+}
+
 .video-container video {
-    border: 10px solid white;
+    border-radius: 20px;
+    margin: 10px;
+    -webkit-box-shadow: 10px 10px 5px 0px orangered;
+    -moz-box-shadow: 10px 10px 5px 0px orangered;
+    box-shadow: 10px 10px 5px 0px orangered;
 }
 
 .video-class h2 {
@@ -227,9 +272,18 @@ nav .menu .menu-button {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background-color: #eb8634;
+    background: var(--gradient);
     padding: 20px;
     flex-wrap: wrap;
+}
+
+.client-card-button {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid black;
+    color:black;
+    border-radius: 20px;
+    background-color: transparent;
 }
 
 .client-card {
@@ -238,11 +292,10 @@ nav .menu .menu-button {
     justify-content: center;
     align-items: center;
     width: 300px;
-    height: 300px;
-    border: 5px solid white;
+    height: 400px;
     border-radius: 25px;
-    background: rgb(232,222,24);
-    background: linear-gradient(90deg, rgba(232,222,24,1) 0%, var(--theme-color) 100%, rgba(0,0,0,1) 100%);
+    color: var(--theme-color);
+    background: #fff;
     padding: 50px;
     -webkit-box-shadow: 7px 9px 8px -5px rgba(0,0,0,0.75);
     -moz-box-shadow: 7px 9px 8px -5px rgba(0,0,0,0.75);
@@ -266,7 +319,7 @@ nav .menu .menu-button {
     left:0;
     right:0;
     background-color: var(--theme-color);
-    animation: shutter 0.5s;    
+    animation: opac 0.5s;    
 }
 
 .self-modal-card {
@@ -275,14 +328,21 @@ nav .menu .menu-button {
     padding: 1rem;
     justify-content: space-evenly;
     padding:2%;
-    width: 70%;
-    height: 550px;
+    position: fixed;
+    top:12%;
+    bottom:2%;
+    left:2%;
+    right:2%;
     text-align: center;
     margin:auto;
-    border-radius: 5px;
+    border-radius: 20px;
     background-color: aliceblue;
-    overflow-y:scroll;
-    animation: shutter 0.5s;
+    animation: opac 0.5s;
+}
+
+.self-modal-card button {
+    margin-left:85%;
+    width:50px;
 }
 
 .author {
@@ -331,42 +391,80 @@ font-size: 30px;
     gap:10px;
 }
 
+.services h3 {
+    color: white;
+}
+
 .services-card {
-    background: rgb(232,222,24);
-    background: linear-gradient(90deg, rgba(232,222,24,1) 0%, var(--theme-color) 100%, rgba(0,0,0,1) 100%);
+    background: var(--gradient);
     width: 100%;
     text-align: center;
-    padding: 3rem 4rem;
+    padding: 3rem 1rem;
     border: 1px solid white;
     border-radius: 20px;
 }
+
 
 .services-card img {
     width: 200px;
     margin:1rem;
 }
 
-.services-card li {
-    list-style: none;
-    border: 1px solid black;
-    padding: 1rem;
+.services-card-inner-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.services-card li:hover {
-    cursor:pointer;
+
+.services-card .service-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    width: 350px;
     background-color: #f1f1f1;
+    border-radius: 20px;
+    margin: 20px 0px;
+    padding: 1rem;
+    -webkit-box-shadow: 7px 9px 8px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 9px 8px -5px rgba(0,0,0,0.75);
+    box-shadow: 7px 9px 8px -5px rgba(0,0,0,0.75);
+}
+
+
+.services-card .service-card img {
+    margin:auto;
+    width: 300px
+}
+
+.services-card .service-card:hover, .services-card .service-card:hover .my_button{
+    cursor:pointer;
+    color:white;
+    border: 2px solid #f1f1f1;
+    background-color: var(--theme-color);
 }
 
 .service-page-link {
     text-decoration: none;
-    color: black;
+    color: white;
     cursor: pointer;
 }
 
 .service-page-link:hover {
-    color:white;
+    color: orangered;
     text-decoration: none;
 }
+
+.my_button {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
 
 /* new change */
 .google-map {
@@ -473,15 +571,20 @@ footer {
 
 .footer-information-container .important-links li {
     list-style: none;
+    padding: 0.5rem;
+    border-radius: 20px;
+    width: 50%;
+    margin: auto;
 }
 
 .footer-information-container .important-links li:hover {
     cursor:pointer;
     background-color: var(--theme-color);
+    animation: opac 0.5s;
 }
 
 .footer-information-container .important-links p {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .footer-credits {
@@ -492,9 +595,9 @@ footer {
 /* footer icons */
 .fa-facebook , .fa-twitter, .fa-instagram, .fa-whatsapp, .fa-linkedin{
     background: var(--theme-color);
-    font-size: 5rem;
-    padding: 1rem;
-    margin:1rem;
+    font-size: 2rem;
+    /* padding: 1rem; */
+    margin:0.5rem;
     color: white;
 }
 
@@ -550,14 +653,19 @@ footer {
 .info-card {
     display: none;
     flex-direction: column;
+    border-radius: 20px;
+    padding: 1rem;
     align-items: center;
     position: fixed;
-    top:0;
-    bottom:0;
-    left:0;
-    right: 0;
+    top:12%;
+    bottom:2%;
+    left:2%;
+    right: 2%;
     background-color: aliceblue;
     animation: shutter 0.5s;
+    -webkit-box-shadow: 7px 9px 8px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 9px 8px -5px rgba(0,0,0,0.75);
+    box-shadow: 7px 9px 8px -5px rgba(0,0,0,0.75);
 }
 
 .info-card h3, .info-card div, 
@@ -570,12 +678,18 @@ footer {
     text-align: center;
 }
 
+.info-card button {
+    width: 50px;
+    margin-left: 85%;
+    margin-bottom:10px;
+}
+
 .info-card img {
     width: 200px;
 }
 
 .info-card-body {
-    overflow: scroll;
+    overflow-y: scroll;
     padding: 4rem;
 }
 
@@ -594,10 +708,6 @@ nav .menu .list-items {
 
 nav .menu .menu-button {
     display: block;
-}
-
-nav .menu {
-    justify-content: right;
 }
 
 .intro {
