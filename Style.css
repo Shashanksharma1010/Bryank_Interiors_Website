@@ -650,6 +650,15 @@ footer {
     margin: auto;
 }
 
+.information-container-section-2-image {
+    display: flex;
+    margin: 10px auto;
+}
+
+.information-container-section-2-image img {
+    border-radius: 20px;
+}
+
 .info-card {
     display: none;
     flex-direction: column;
@@ -780,12 +789,4 @@ form {
 }
 
 }
-
-
-
-
-
-
-
-
 
