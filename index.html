@@ -26,6 +26,14 @@
     </head>
 
     <body>
+
+        <!-- Loader -->
+        <div class="loader">
+            <svg>
+                <rect></rect>
+            </svg>
+        </div>
+
          <!-- Navbar Section -->
          <nav>
             <!-- Non Hamburger menu -->
@@ -37,24 +45,67 @@
                 <div class="list-items">
                     <li onclick="PageView('HomePage')">Home</li>
                     <li onclick="PageView('AboutPage')">About Us</li>
-                    <li onclick="PageView('HomePage')"><a class="service-page-link" href="#ServicesPage">Services</a></li>
+                    <li onclick="PageView('HomePage')">
+                        <a class="service-page-link" href="#ServicesPage">
+                            Services 
+                            <svg class="dropdown" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="30" height="15" viewBox="0 -60 256 256" xml:space="preserve">
+                                <defs>
+                                </defs>
+                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                    <path d="M 90 24.25 c 0 -0.896 -0.342 -1.792 -1.025 -2.475 c -1.366 -1.367 -3.583 -1.367 -4.949 0 L 45 60.8 L 5.975 21.775 c -1.367 -1.367 -3.583 -1.367 -4.95 0 c -1.366 1.367 -1.366 3.583 0 4.95 l 41.5 41.5 c 1.366 1.367 3.583 1.367 4.949 0 l 41.5 -41.5 C 89.658 26.042 90 25.146 90 24.25 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
                     <li onclick="PageView('CertificatePage')">Certificates</li>
                     <li onclick="PageView('ContactFormPage')">Contact</li>
-                    <li><a class="service-page-link" href="https://wa.me/9871657694" target="_blank">Whatsapp</a></li>
+                    <li><a id="service-page-link" class="service-page-link" href="https://wa.me/9871657694" target="_blank">Whatsapp</a></li>
                     <li><a  class="service-page-link" href="tel:+91-9871657694" target="_blank">Call</a></li>
                 </div>
 
                 <div class="menu-button" onclick="openMobileMenu()">
                     <img src="images/menu.png" width="50px">
                 </div>
+
+                <div class="menu-dropdown-links">
+                    <ul>
+                        <li class="dropdown-link"><a href="#CIVIL_WORK">Civil Work</a></li>
+                        <li class="dropdown-link"><a href="#FALSE_CEILING">False Ceiling</a></li>
+                        <li class="dropdown-link"><a href="#JOINERY_WORKS">Joinery Works</a></li>
+                        <li class="dropdown-link"><a href="#PAINTING_AND_POLISHING">Painting and Polishing</a></li>
+                        <li class="dropdown-link"><a href="#ELECTRICAL_WORKS">Electrical Works</a></li>
+                        <li class="dropdown-link"><a href="#FLOORING">Flooring</a></li>
+                    </ul>
+                </div>
             </div>
+
+            
 
             <!-- Hamburger menu -->
             <div class="hamburger-menu">
                 <li class="hamburger-close" onclick="closeMobileMenu()">X</li>
                 <li onclick="PageView('HomePage'), closeMobileMenu()">Home</li>
                 <li onclick="PageView('AboutPage'), closeMobileMenu()">About Us</li>
-                <li onclick="PageView('HomePage'), closeMobileMenu()"><a class="service-page-link" href="#ServicesPage">Services</a></li>
+                <li onclick="hamburgerMenuDropDown()">
+                    Services
+                    <svg class="dropdown" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="30" height="15" viewBox="0 -60 256 256" xml:space="preserve">
+                        <defs>
+                        </defs>
+                        <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                            <path d="M 90 24.25 c 0 -0.896 -0.342 -1.792 -1.025 -2.475 c -1.366 -1.367 -3.583 -1.367 -4.949 0 L 45 60.8 L 5.975 21.775 c -1.367 -1.367 -3.583 -1.367 -4.95 0 c -1.366 1.367 -1.366 3.583 0 4.95 l 41.5 41.5 c 1.366 1.367 3.583 1.367 4.949 0 l 41.5 -41.5 C 89.658 26.042 90 25.146 90 24.25 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        </g>
+                    </svg>
+                </li>
+
+                <div class="hamburger-menu-dropdown-links">
+                    <li class="hamburger-menu-dropdown-link"><a onclick="PageView('HomePage'), closeMobileMenu()" href="#CIVIL_WORK">Civil Work</a></li>
+                    <li class="hamburger-menu-dropdown-link"><a onclick="PageView('HomePage'), closeMobileMenu()" href="#FALSE_CEILING">False Ceiling</a></li>
+                    <li class="hamburger-menu-dropdown-link"><a onclick="PageView('HomePage'), closeMobileMenu()" href="#JOINERY_WORKS">Joinery Works</a></li>
+                    <li class="hamburger-menu-dropdown-link"><a onclick="PageView('HomePage'), closeMobileMenu()" href="#PAINTING_AND_POLISHING">Painting and Polishing</a></li>
+                    <li class="hamburger-menu-dropdown-link"><a onclick="PageView('HomePage'), closeMobileMenu()" href="#ELECTRICAL_WORKS">Electrical Works</a></li>
+                    <li class="hamburger-menu-dropdown-link"><a onclick="PageView('HomePage'), closeMobileMenu()" href="#FLOORING">Flooring</a></li>
+                </div>
+
                 <li onclick="PageView('CertificatePage'), closeMobileMenu()">Certificates</li>
                 <li onclick="PageView('ContactFormPage'), closeMobileMenu()">Contact</li>
                 <li><a class="service-page-link" href="https://wa.me/9871657694" target="_blank">Whatsapp</a></li>
@@ -71,7 +122,6 @@
                     <img src="images/logo.png" width="200px">
                     <br><br>
                     <h2><span class="magic">"</span>Leap Towards Better <span class="magic">Construction</span> & <span class="magic">Interiors</span><span class="magic">"</span></h2>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ff5500" fill-opacity="1" d="M0,224L0,96L120,96L120,32L240,32L240,160L360,160L360,224L480,224L480,64L600,64L600,288L720,288L720,128L840,128L840,32L960,32L960,128L1080,128L1080,64L1200,64L1200,192L1320,192L1320,192L1440,192L1440,320L1320,320L1320,320L1200,320L1200,320L1080,320L1080,320L960,320L960,320L840,320L840,320L720,320L720,320L600,320L600,320L480,320L480,320L360,320L360,320L240,320L240,320L120,320L120,320L0,320L0,320Z"></path></svg>
                 </div>
             </div>
             <br><br>
@@ -86,8 +136,7 @@
                         company established in 2007. Our ethos is excellence in design and delivery; 
                         working across architecture, construction, master planning, interior design.
                     </p>
-                    <br>
-                    
+        
                     <p class="paragraph-style">
                         With a far sighted vision, a keen perception of the market trends, and a strong 
                         commitment to customer satisfaction, we are engaged in offering reliable Interiors 
@@ -97,7 +146,6 @@
                         Tiling, POP, False Ceiling, Aluminum Glass Door and Civil- CC Road, Villas & Housing, 
                         PCC | we always keep client’s need in mind to ensure client satisfaction.
                     </p>
-                    <br>
                 </div>
             </div>
 
@@ -108,8 +156,8 @@
                         At Bryank Interiror we have sustained success through the strength and expertise 
                         of our people, providing innovative construction & Interior solutions to complex infrastructure 
                         projects across PAN India, especially in Uttarakhand & Delhi.
-
                         <br><br><br>
+
                         WE FOCUS ON:
                         <br>
                         <Span>
@@ -171,7 +219,7 @@
                 <div class="information-container-section-2">
                     <div>
                         <div class="information-container-section-2-image">
-                            <img src="images/residential.jpg" width="300px" decoding="async">
+                            <img src="images/residential.jpg" width="300px">
                         </div>
 
                         <h3>Residential Construction & Interior Work</h3>
@@ -188,7 +236,7 @@
     
                     <div>
                         <div class="information-container-section-2-image">
-                            <img src="images/commercial.jpg" width="300px" decoding="async">
+                            <img src="images/commercial.jpg" width="300px">
                         </div>
 
                         <h3>Commercial Construction & Interior Work</h3>
@@ -204,7 +252,7 @@
     
                     <div>
                         <div class="information-container-section-2-image">
-                            <img src="images/industrial.jpg" width="300px" decoding="async">
+                            <img src="images/industrial.jpg" width="300px">
                         </div>
 
                         <h3>Industrial Construction & Interior Work</h3>
@@ -257,11 +305,11 @@
              <div class="photo-gallery">
                 <h1 class="heading-style">We Incorporate Beautiful Designs & Flawless Construction</h1>
                 <div class="grid-container">
-                    <div class="item1"><img src='images/image8.jpeg' decoding="async"></div>
-                    <div class="item2"><img src='images/image4.jpeg' decoding="async"></div>
-                    <div class="item3"><img src='images/image1.jpeg' decoding="async"></div>  
-                    <div class="item4"><img src='images/image2.jpeg' decoding="async"></div>
-                    <div class="item5"><img src='images/image10.jpg' decoding="async"></div>
+                    <div class="item1"><img src='images/image8.jpeg'></div>
+                    <div class="item2"><img src='images/image4.jpeg'></div>
+                    <div class="item3"><img src='images/image1.jpeg'></div>  
+                    <div class="item4"><img src='images/image2.jpeg'></div>
+                    <div class="item5"><img src='images/image10.jpg'></div>
                 </div>
             </div>
 
@@ -269,8 +317,9 @@
             <div id="ServicesPage" class="Services-section">
                 <h1 class="heading-style">Our <span class="magic">Services</span></h1>
                 <div class="services">
-                    <div class="services-card">
-                        <h3>CIVIL WORK</h3>
+                    <div id="CIVIL_WORK" class="services-card">
+                        <br>
+                        <h3 >CIVIL WORK</h3>
                         <img src="images/civil-work.png">
                         <hr>
 
@@ -334,7 +383,8 @@
                         </div>
                     </div>
     
-                    <div class="services-card">
+                    <div  id="FALSE_CEILING" class="services-card">
+                        <br>
                         <h3>FALSE CEILING</h3>
                         <br>
                         <img src="images/ceiling.png" height="200px">
@@ -376,7 +426,8 @@
                         </div>
                     </div>
     
-                    <div class="services-card">
+                    <div id="JOINERY_WORKS" class="services-card">
+                        <br>
                         <h3>JOINERY WORKS</h3>
                         <img src="images/joinery.png">
                         <hr>
@@ -418,7 +469,8 @@
                         </div>
                     </div>
     
-                    <div class="services-card">
+                    <div id="PAINTING_AND_POLISHING" class="services-card">
+                        <br>
                         <h3>PAINITNG AND POLISHING</h3>
                         <br>
                         <img src="images/Paint.png">
@@ -469,7 +521,8 @@
                         </div>
                     </div>
     
-                    <div class="services-card">
+                    <div id="ELECTRICAL_WORKS" class="services-card">
+                        <br>
                         <h3>ELECTRICAL WORKS</h3>
                         <br>
                         <img src="images/electric.png">
@@ -504,7 +557,8 @@
                         </div>
                     </div>
 
-                    <div class="services-card">
+                    <div id="FLOORING" class="services-card">
+                        <br>
                         <h3>FLOORING</h3>
                         <br>
                         <img src="images/Floor.png">
@@ -552,7 +606,7 @@
 
             <!-- Our Clients -->
             <div>
-                <h2 class="heading-style">Our Clients</h2>
+                <h2 class="heading-style">Our <span class="magic">Clients</span></h2>
                 <div class="client-card-section" >
                     <div onclick="Modal('true','client.max')" class="client-card">
                         <img src="images/max.png" width="200px">
@@ -787,13 +841,14 @@
         </div>
 
 
-        <!-- My Script -->
+        <!-- My Scripts -->
         <script src="index.js"></script>
         <script src="card.js"></script>
-
+        <script src="dropdown-links.js"></script>
+        <script src="loader.js"></script>
 
         <!-- Bootstrap Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -811,7 +866,7 @@
                 </div>
             </div>
             </div>
-        </div>
+        </div> -->
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" ></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" ></script>
