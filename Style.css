@@ -18,13 +18,58 @@
 }
 
 
+img {
+    animation: opac 1s;
+}
+
+
+/* loader */
+.loader {
+    margin:0;
+    padding:0;
+    display: flex;
+    position: fixed;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    z-index: 20;
+    justify-content:center;
+    align-items:center;
+    min-height: 100vh;
+    background: #fff;
+}
+
+.loader svg {
+    width: 100px;
+    height:100px;
+}
+
+.loader svg rect {
+    width: 100px;
+    height:100px;
+    fill: none;
+    stroke-width: 100px;
+    stroke: orangered;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 50%;
+    animation: loaderanimation 2s linear infinite;
+}
+
+@keyframes loaderanimation {
+    to {
+        stroke-dashoffset: 250%;
+    }
+}
+
+
 /* Common Styling */
 .heading-style {
     text-align: center;
     /* text-decoration:wavy; */
     /* text-decoration-color: var(--theme-color); */
-    color:white;
-    background: var(--theme-color);
+    color: black;
+    background: white;
     font-size: xx-large;
     border: 2px solid var(--theme-color);
     padding: 20px;
@@ -67,6 +112,11 @@ background: yellow;
 }
 
 
+
+
+
+
+
 /* Menu Section */
 
 nav .menu {
@@ -106,13 +156,14 @@ nav .menu .list-items li {
     transition: ease 0.5s;
 }
 
-nav .menu .list-items li:hover {
+nav .menu .list-items li:hover{
     color: orangered;
 }
 
 nav .menu .menu-button {
     display: none;
 }
+
 
 /* new changes applied removed margin */
 /* hamburger menu */
@@ -127,7 +178,6 @@ nav .menu .menu-button {
     flex-direction: column;
     /* justify-content: center; */
     /* align-items: center; */
-    color:black;
     background-color: var(--theme-color);
     color:white;
     z-index:10;
@@ -146,8 +196,63 @@ nav .menu .menu-button {
 
 .hamburger-menu li:hover{
     background: var(--gradient);
-    color:var(--theme-color);
 }
+
+
+.menu-dropdown-links {
+    display: none;
+    position:fixed;
+    top:10%;
+    left:45%;
+    z-index:10;
+    padding:2rem;
+    width:350px;
+    border-radius: 20px;
+    background-color: white;
+    animation: opac 0.5s;
+}
+
+.show {
+    display: block;
+}
+
+.menu-dropdown-links li {
+    list-style: none;
+    margin:10px;
+    padding: 1rem;
+    border-radius: 5px;
+    transition: all ease 0.1s;
+}
+
+.menu-dropdown-links li a:hover{
+    color: orangered;  
+    /* padding: 1rem; */
+}
+
+.menu-dropdown-links a {
+    text-decoration: none;
+}
+
+.menu-dropdown-links li a {
+    color:black;
+}
+
+
+.hamburger-menu-dropdown-links {
+    display: none;
+    font-size: medium;
+    animation: shutter 0.5s;
+}
+
+.hamburger-menu-dropdown-links a {
+    color:white;
+    text-decoration: none;
+}
+
+
+
+
+
 
 /* new changes applied */
 /* Intro Section */
@@ -198,7 +303,7 @@ nav .menu .menu-button {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    padding: 50px;
+    padding: 100px;
 }
 
 .banner-paragraph {
@@ -441,8 +546,8 @@ font-size: 30px;
 
 .services-card .service-card:hover, .services-card .service-card:hover .my_button{
     cursor:pointer;
-    color:white;
-    border: 2px solid #f1f1f1;
+    color:#fff;
+    border: 2px solid #fff;
     background-color: var(--theme-color);
 }
 
@@ -671,7 +776,7 @@ footer {
     left:2%;
     right: 2%;
     background-color: aliceblue;
-    animation: shutter 0.5s;
+    animation: opac 0.5s;
     -webkit-box-shadow: 7px 9px 8px -5px rgba(0,0,0,0.75);
     -moz-box-shadow: 7px 9px 8px -5px rgba(0,0,0,0.75);
     box-shadow: 7px 9px 8px -5px rgba(0,0,0,0.75);
@@ -701,7 +806,6 @@ footer {
     overflow-y: scroll;
     padding: 4rem;
 }
-
 
 
 
@@ -789,4 +893,12 @@ form {
 }
 
 }
+
+
+
+
+
+
+
+
 
