@@ -2,9 +2,22 @@ var dropDownButton = document.querySelector(".dropdown");
 var dropDown = document.querySelector('.menu-dropdown-links ');
 var hamburgerDropDown = document.querySelector('.hamburger-menu-dropdown-links');
 
+const onMouseOverOutside = ( Button, element, callback) => {
+  document.addEventListener('mouseover', e => {
+    if (Button.contains(e.target) || element.contains(e.target)) {
+      return
+    } 
+    callback();
+  });
+};
+
 dropDownButton.addEventListener('mouseover', () => {
-    dropDown.classList.toggle('show');
+  dropDown.classList.add('show');
 }) 
+
+onMouseOverOutside(dropDownButton, dropDown, () => dropDown.classList.remove('show'));
+// onMouseOverOutside(dropDown, () => dropDown.classList.remove('show'));
+
 
 function hamburgerMenuDropDown() {
   if (hamburgerDropDown.style.display == "none") {
@@ -15,10 +28,3 @@ function hamburgerMenuDropDown() {
     document.querySelector('.hamburger-menu').style.overflowY = 'hidden';
   }
 }
-
-
-
-
-
-  
-  // Will log 'Hello' whenever the user clicks outside of #my-element
