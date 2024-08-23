@@ -9,6 +9,10 @@
     transition: all ease 0.5s;
 }
 
+body {
+    background-color: rgb(255, 251, 245);
+}
+
 /*  #eb8634 */
 
 /* CSS variables */
@@ -28,6 +32,7 @@ img {
     margin:0;
     padding:0;
     display: flex;
+    flex-direction: column;
     position: fixed;
     top:0;
     bottom:0;
@@ -76,13 +81,13 @@ img {
     margin:5px;
 }
 
-.magic {
-    color: orangered;
-}
-
 .paragraph-style {
     font-size:medium;
-    color:black;
+    color: rgb(60, 58, 58);
+}
+
+.magic {
+    color: orangered;
 }
 
 #AboutPage, #ContactFormPage, #CertificatePage {
@@ -202,7 +207,7 @@ nav .menu .menu-button {
 .menu-dropdown-links {
     display: none;
     position:fixed;
-    top:10%;
+    top:6%;
     left:45%;
     z-index:10;
     padding:2rem;
@@ -313,10 +318,6 @@ nav .menu .menu-button {
     font-size: larger;
 }
 
-.banner-paragraph p {
-    color: black;
-}
-
 
 /* Our Mission */
 .our-mission .container{
@@ -400,7 +401,7 @@ nav .menu .menu-button {
     height: 400px;
     border-radius: 25px;
     color: var(--theme-color);
-    background: #fff;
+    background-color:antiquewhite;
     padding: 50px;
     -webkit-box-shadow: 7px 9px 8px -5px rgba(0,0,0,0.75);
     -moz-box-shadow: 7px 9px 8px -5px rgba(0,0,0,0.75);
@@ -441,7 +442,7 @@ nav .menu .menu-button {
     text-align: center;
     margin:auto;
     border-radius: 20px;
-    background-color: aliceblue;
+    background-color: #FAF9F6;
     animation: opac 0.5s;
 }
 
@@ -775,7 +776,7 @@ footer {
     bottom:2%;
     left:2%;
     right: 2%;
-    background-color: aliceblue;
+    background-color: #FAF9F6;
     animation: opac 0.5s;
     -webkit-box-shadow: 7px 9px 8px -5px rgba(0,0,0,0.75);
     -moz-box-shadow: 7px 9px 8px -5px rgba(0,0,0,0.75);
