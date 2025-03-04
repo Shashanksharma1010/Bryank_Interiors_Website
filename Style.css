@@ -267,17 +267,17 @@ nav .menu .menu-button {
 /* Intro Section */
 
 .intro {
-    margin:2px;
+     margin:2px;
     display:flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     height: 90vh;
     background-repeat: no-repeat;
-    background-image: url("images/intro.JPEG");
+    background-image: url("images/intro.jpeg");
     background-size: cover;
-    padding: 2rem;
-    margin-top: 80px;
+    padding: 1rem;
+    margin-top: 5%;
 }
 
 .intro video {
