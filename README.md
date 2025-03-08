@@ -22,11 +22,13 @@ Developed a **JavaScript-powered Single Page Application (SPA)** to showcase **B
 ## 📌 Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/bryank-interiors-spa.git
+   git clone https://github.com/your-username/Bryank_Interiors_Website
+.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd bryank-interiors-spa
+   cd Bryank_Interiors_Website
+
    ```
 3. Open **index.html** in your browser to view the website.
 
